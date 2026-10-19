@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * Deterministic decisions taken in code from Jev's judgments.
- * The thresholds are starting points to tune on real chats.
+ * The thresholds are starting points for tune on real chats.
  */
 @Component
 public class ModerationPolicy {
