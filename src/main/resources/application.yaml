@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: jev-spring-intro
+
+jev:
+  base-url: https://api.typesafe.ai
+  api-key: ${TYPESAFE_API_KEY:}
+  model: jev-latest

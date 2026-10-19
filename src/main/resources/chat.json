@@ -1,0 +1,17 @@
+{
+  "group": "Spring Boot Developers",
+  "messages": [
+    { "author": "erin", "text": "Good morning everyone! Coffee time ☕" },
+    { "author": "bob", "text": "Hi all, after upgrading to Boot 4 my app fails on startup with 'No qualifying bean of type ObjectMapper'. Any idea?" },
+    { "author": "alice", "text": "Boot 4 moved to Jackson 3. Inject tools.jackson.databind.json.JsonMapper instead of com.fasterxml ObjectMapper, or add spring-boot-jackson2 if you need to stay on Jackson 2 for a while." },
+    { "author": "bob", "text": "That was it, thanks a lot alice!" },
+    { "author": "carol", "text": "Seriously bob? It's in the release notes. Learn to read before spamming the group." },
+    { "author": "dave", "text": "Tired of startup errors? My course 'Spring Boot Mastery' is 70% off today only: bit.ly/sb-mastery 🚀" },
+    { "author": "erin", "text": "Haha, the Monday upgrades are always fun 😄" },
+    { "author": "bob", "text": "Another one: how do I configure a different timeout for each RestClient I build?" },
+    { "author": "dave", "text": "All of this is covered in module 4 of my course, link above. Use code SPRING70." },
+    { "author": "carol", "text": "Nobody cares about your course dave. And bob, google it, this isn't your personal helpdesk." },
+    { "author": "alice", "text": "Carol, please keep it friendly. Dave, please keep ads out of the group." },
+    { "author": "erin", "text": "Anyone going to the meetup on Thursday?" }
+  ]
+}
