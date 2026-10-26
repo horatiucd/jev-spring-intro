@@ -14,7 +14,8 @@ import java.util.Map;
 
 /**
  * Playground for the three Jev primitives.
- * Each code review comment is sent as the state of one request that asks a Noul, a Choice and a Score question together.
+ * Each code review comment is sent as the state of one request that asks
+ * a Noul, a Choice and a Score question together.
  */
 @Component
 public class PrimitivesRunner implements CommandLineRunner {
