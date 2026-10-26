@@ -121,7 +121,10 @@ class JevClientTest {
         assertThat(response.choice("topic").probabilities()).containsEntry("other", 0.1);
         assertThat(response.score("anger").score()).isEqualTo(1.2);
         assertThat(response.score("anger").legend()).containsEntry("2", "furious");
+
         assertThat(response.usage().inputTokens()).isEqualTo(300);
+        assertThat(response.usage().outputTokens()).isEqualTo(20);
+
         server.verify();
     }
 }
