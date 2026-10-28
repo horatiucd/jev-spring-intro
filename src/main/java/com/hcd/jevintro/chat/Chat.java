@@ -3,7 +3,7 @@ package com.hcd.jevintro.chat;
 import java.util.List;
 
 /**
- * A chat group transcript. This record is sent to Jev as the request state.
+ * A chat group transcript.
  */
 public record Chat(String group, List<Message> messages) {
 

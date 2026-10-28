@@ -26,9 +26,8 @@ public class ModerationPolicy {
 
     public List<Decision> decide(MemberProfile profile) {
         List<Decision> decisions = new ArrayList<>();
-        double toxic = profile.toxic().noul();
-        double help = profile.helpfulness().score();
 
+        double toxic = profile.toxic().noul();
         if (toxic >= 0.85) {
             decisions.add(new Decision(Action.MUTE, "very likely hostile (%.2f)".formatted(toxic)));
         } else if (toxic >= 0.5) {
@@ -47,8 +46,10 @@ public class ModerationPolicy {
         }
 
         // reward helpers only when they are also respectful
+        double help = profile.helpfulness().score();
         if (toxic < 0.2) {
-            if (help >= 2.5 && profile.helpfulness().confidence() >= 0.5) {
+            if (help >= 2.5 &&
+                    profile.helpfulness().confidence() >= 0.5) {
                 decisions.add(new Decision(Action.INVITE_AS_MODERATOR,
                         "consistently helpful (%.2f / 3)".formatted(help)));
             } else if (help >= 1.5) {
